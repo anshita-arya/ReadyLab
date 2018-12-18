@@ -19,7 +19,7 @@ namespace simulated_device
         // The device connection string to authenticate the device with your IoT hub.
         // Using the Azure CLI:
         // az iot hub device-identity show-connection-string --hub-name {YourIoTHubName} --device-id MyDotnetDevice --output table
-        private readonly static string s_connectionString = "HostName=IotHubCheck.azure-devices.net;DeviceId=MyDotnetDevice;SharedAccessKey=Ez0n4ZTXxMnKttyl4g2nbKBLq8LepctgHUSK2u3xDms=";
+        private readonly static string s_connectionString = "";
 
         // Async method to send simulated telemetry
         [Authorize]

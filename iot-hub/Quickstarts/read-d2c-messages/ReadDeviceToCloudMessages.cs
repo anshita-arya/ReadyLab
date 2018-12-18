@@ -17,14 +17,14 @@ namespace read_d2c_messages
     {
         // Event Hub-compatible endpoint
         // az iot hub show --query properties.eventHubEndpoints.events.endpoint --name {your IoT Hub name}
-        private readonly static string s_eventHubsCompatibleEndpoint = "sb://iothub-ns-iothubchec-1081363-25974146da.servicebus.windows.net/";
+        private readonly static string s_eventHubsCompatibleEndpoint = "";
 
         // Event Hub-compatible name
         // az iot hub show --query properties.eventHubEndpoints.events.path --name {your IoT Hub name}
         private readonly static string s_eventHubsCompatiblePath = "iothubcheck";
         
         // az iot hub policy show --name iothubowner --query primaryKey --hub-name {your IoT Hub name}
-        private readonly static string s_iotHubSasKey = "beJtPdLPCf1SnSWdy2sXTwQ/mcPULMsUQ5sJ9ZFXK7I=";
+        private readonly static string s_iotHubSasKey = "";
         private readonly static string s_iotHubSasKeyName = "iothubowner";
         private static EventHubClient s_eventHubClient;
 
