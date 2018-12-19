@@ -30,6 +30,7 @@ namespace read_d2c_messages
 
         // Asynchronously create a PartitionReceiver for a partition and then start 
         // reading any messages sent from the simulated client.
+        [Obsolete]
         private static async Task ReceiveMessagesFromDeviceAsync(string partition, CancellationToken ct)
         {
             // Create the receiver using the default consumer group.
@@ -66,6 +67,7 @@ namespace read_d2c_messages
             }
         }
 
+        [NonExposed]
         private static async Task Main(string[] args)
         {
             Console.WriteLine("IoT Hub Quickstarts - Read device to cloud messages. Ctrl-C to exit.\n");
